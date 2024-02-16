@@ -1,4 +1,6 @@
-import './global.css';
+import { MantineProvider } from '@mantine/core';
+
+import '@mantine/core/styles.css';
 
 export const metadata = {
   title: 'Welcome to client',
@@ -12,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <MantineProvider defaultColorScheme="dark">{children}</MantineProvider>
+      </body>
     </html>
   );
 }

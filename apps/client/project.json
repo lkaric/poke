@@ -1,0 +1,17 @@
+{
+  "name": "client",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/client",
+  "projectType": "application",
+  "targets": {
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/client",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}

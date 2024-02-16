@@ -1,0 +1,17 @@
+{
+  "name": "landing",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/landing",
+  "projectType": "application",
+  "targets": {
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/landing",
+        "forwardAllArgs": false
+      }
+    }
+  },
+  "tags": []
+}
